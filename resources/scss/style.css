@@ -173,6 +173,24 @@ nav {
   padding: 3%;
   text-align: center; }
 
+#tableimg {
+  padding: 2%; }
+
+#tabledesc {
+  padding: 6% 4% 4% 4%; }
+
+.walkthrough-dosdonts h1 {
+  padding: 2% 0 0 4%; }
+
+#dosdontsleft, #dosdontsright {
+  padding: 1% 5% 1% 5%; }
+  #dosdontsleft img, #dosdontsright img {
+    width: 100px;
+    float: left;
+    padding-right: 20px; }
+  #dosdontsleft p, #dosdontsright p {
+    padding-bottom: 20px; }
+
 /*********ABOUT***************************/
 /*********BLOG***************************/
 /*********FOOTER***************************/
@@ -224,7 +242,8 @@ footer {
   zoom: 1;
   /* For IE 6/7 */ }
 
-/*  GRID OF THREE  */
+/*  GRID measurements, all are the right percentage 
+minus 6% or more allotted for padding  */
 .span_3_of_3 {
   width: 100%; }
 
@@ -232,10 +251,16 @@ footer {
   width: 60%; }
 
 .span_1_of_3 {
-  width: 28%; }
+  width: 27%; }
 
 .span_1_of_2 {
-  width: 50%; }
+  width: 40%; }
+
+.span_1_of_4 {
+  width: 19%; }
+
+.span_3_of_4 {
+  width: 69%; }
 
 /****MEDIA QUERY: GO FULL WIDTH AT LESS THAN 1024 PIXELS***********/
 @media only screen and (max-width: 1024px) {
