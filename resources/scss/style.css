@@ -8,11 +8,12 @@ body {
   /* Add another similar system fonts later */
   font-weight: 400; }
 
-* {
-  padding: 0 !important;
-  margin: 0 !important;
-  font-kerning: normal; }
+/** {
+	padding: 0 !important; 
+	margin: 0 !important; 
 
+	font-kerning: normal;
+}*/
 p {
   font-size: 1rem; }
 
@@ -55,6 +56,8 @@ h4 {
   padding: 0;
   margin: 0;
   background-color: tomato; }
+  .page h1 {
+    margin-top: 0; }
 
 .blank {
   border: papayawhip 2px solid; }
@@ -66,13 +69,15 @@ nav {
   margin: 0;
   padding: 10px;
   top: 0;
-  opacity: .7;
+  opacity: .8;
   z-index: 100;
   background-color: white;
   display: inline; }
   nav img {
     height: 50px;
     float: left; }
+  nav a {
+    text-decoration: none; }
 
 #navleft {
   margin-left: 60px;
@@ -89,21 +94,26 @@ nav {
     width: 30px;
     height: 30px;
     padding-left: 20px; }
-  #navright a {
-    padding-left: 20px; }
+  #navright a, #navright a:visited {
+    padding-left: 20px;
+    text-decoration: none;
+    color: darkred; }
+  #navright a:hover {
+    color: black; }
 
 /*********HOME/LANDING***************************/
 #intro {
   padding-top: 20vh;
-  width: 50%;
+  width: 40%;
   text-align: center;
   margin-left: auto;
   margin-right: auto; }
 
-#downarrow {
+.downarrow {
   position: absolute;
   bottom: 30px;
-  left: 50%; }
+  left: 50%;
+  text-decoration: none; }
 
 #leftclaw {
   float: left;
@@ -117,6 +127,52 @@ nav {
   width: 40%; }
 
 /*********WALKTHROUGH***************************/
+#walkthrough-wrapper h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 50px; }
+#walkthrough-wrapper .page {
+  height: calc(100vh - 120px);
+  padding-top: 120px; }
+
+#walkthrough-head {
+  position: fixed;
+  background-color: papayawhip;
+  z-index: 100;
+  top: 50px;
+  width: 100%;
+  padding: 20px; }
+  #walkthrough-head img {
+    width: 30px;
+    height: 30px; }
+  #walkthrough-head ul {
+    margin: 0;
+    list-style-type: none;
+    padding-left: 0; }
+    #walkthrough-head ul li {
+      display: inline;
+      padding-left: 20px;
+      padding-right: 20px; }
+      #walkthrough-head ul li a, #walkthrough-head ul li a:visited {
+        text-decoration: none;
+        color: darkred; }
+      #walkthrough-head ul li a:hover {
+        color: black; }
+
+.walkthrough-intro .circlelink {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: "Lobster";
+  padding: 20px; }
+
+#introtext {
+  padding: 3%; }
+
+#introlinks {
+  padding: 3%;
+  text-align: center; }
+
 /*********ABOUT***************************/
 /*********BLOG***************************/
 /*********FOOTER***************************/
@@ -141,9 +197,9 @@ footer {
 
 /*********RESPONSIVE GRID******************************/
 /*  SECTIONS  */
-.section {
+.row {
   clear: both;
-  padding: 0px;
+  padding: 30px;
   margin: 0px; }
 
 /*  COLUMN SETUP  */
@@ -173,10 +229,10 @@ footer {
   width: 100%; }
 
 .span_2_of_3 {
-  width: 66%; }
+  width: 60%; }
 
 .span_1_of_3 {
-  width: 33%; }
+  width: 28%; }
 
 .span_1_of_2 {
   width: 50%; }

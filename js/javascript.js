@@ -8,7 +8,7 @@ $(function() {
       if (target.length) {
         $('html,body').animate({
           //the top - # sets it that # of pixels above div (for nav)
-          scrollTop: target.offset().top-50
+          scrollTop: target.offset().top-0
         }, 700);
         return false;
       }
