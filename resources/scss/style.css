@@ -1,104 +1,82 @@
 /*# sourceMappingURL=style.css.map */
-body{
+body {
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
-.page{
-  position:relative;
-  width:100%;
-  height:100vh;
+.page {
+  position: relative;
+  width: 100%;
+  height: 100vh;
   padding: 0;
   margin: 0;
-  background-color: tomato;
-}
+  background-color: tomato; }
 
-.blank{
-  border: papayawhip 2px solid;
-}
-
+.blank {
+  border: papayawhip 2px solid; }
 
 /*********NAVIGATION***************************/
-nav{
+nav {
   position: fixed;
-  width:100%;
-  margin:0;
-  padding:10px;
-  top:0;
-  opacity:.7;
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  top: 0;
+  opacity: .7;
   z-index: 100;
   background-color: white;
-  display: inline;
-  img{
+  display: inline; }
+  nav img {
     height: 50px;
-    float: left;
-  }
-}
+    float: left; }
 
-#navleft{
+#navleft {
   margin-left: 60px;
   margin-right: 0;
-  width:40%;
-  h1,h3{
-    margin:0;
-  }
-}
+  width: 40%; }
+  #navleft h1, #navleft h3 {
+    margin: 0; }
 
-#navright{
+#navright {
   position: absolute;
   right: 30px;
-  top: 10px;
-  img{
-    width:30px;
+  top: 10px; }
+  #navright img {
+    width: 30px;
     height: 30px;
-    padding-left: 20px;
-  }
-  a{
-    padding-left: 20px;
-  }
-}
+    padding-left: 20px; }
+  #navright a {
+    padding-left: 20px; }
 
 /*********HOME/LANDING***************************/
-
-#intro{
+#intro {
   padding-top: 20vh;
   width: 50%;
   text-align: center;
   margin-left: auto;
-  margin-right: auto;
-}
+  margin-right: auto; }
 
-#downarrow{
+#downarrow {
   position: absolute;
   bottom: 30px;
-  left:50%;
-}
+  left: 50%; }
 
-#leftclaw{
+#leftclaw {
   float: left;
-  width: 400px;
-}
+  width: 400px; }
 
-#rightclaw{
+#rightclaw {
   float: right;
-  width: 400px;
-}
+  width: 400px; }
 
-#lobster{
-  width:40%;
-}
+#lobster {
+  width: 40%; }
+
 /*********WALKTHROUGH***************************/
-
 /*********ABOUT***************************/
-
 /*********BLOG***************************/
-
 /*********FOOTER***************************/
-footer{
-  padding: 10px;
-
-}
-
+footer {
+  padding: 10px; }
 
 /*********FLEXBOX***************************/
 .flex-container {
@@ -108,67 +86,62 @@ footer{
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-    align-items: center;
-    justify-content: center;
-}
+  align-items: center;
+  justify-content: center; }
 
 .flex-child-center {
   width: 70vw;
   margin: auto;
-  text-align: center;
-}
+  text-align: center; }
 
 /*********RESPONSIVE GRID******************************/
 /*  SECTIONS  */
 .section {
   clear: both;
   padding: 0px;
-  margin: 0px;
-}
+  margin: 0px; }
 
 /*  COLUMN SETUP  */
 .col {
   display: block;
-  float:left;
-  margin: 0 0 0 0;
-}
-.col:first-child { margin-left: 0; }
+  float: left;
+  margin: 0 0 0 0; }
 
+.col:first-child {
+  margin-left: 0; }
 
 /*  GROUPING  */
 .group:before,
 .group:after {
-  content:"";
-  display:table;
-}
+  content: "";
+  display: table; }
+
 .group:after {
-  clear:both;
-}
+  clear: both; }
+
 .group {
-    zoom:1; /* For IE 6/7 */
-}
+  zoom: 1;
+  /* For IE 6/7 */ }
 
 /*  GRID OF THREE  */
 .span_3_of_3 {
-  width: 100%;
-}
+  width: 100%; }
+
 .span_2_of_3 {
-  width: 66%;
-}
+  width: 66%; }
+
 .span_1_of_3 {
-  width: 33%;
-}
+  width: 33%; }
+
 .span_1_of_2 {
-  width: 50%;
-}
+  width: 50%; }
 
 /****MEDIA QUERY: GO FULL WIDTH AT LESS THAN 1024 PIXELS***********/
 @media only screen and (max-width: 1024px) {
-  .col { 
-    margin: 0;
-  }
+  .col {
+    margin: 0; }
 
-  .span_3_of_3, .span_2_of_3, .span_1_of_3, .span_1_of_2 { 
-    width: 100%; 
-  }
-}
+  .span_3_of_3, .span_2_of_3, .span_1_of_3, .span_1_of_2 {
+    width: 100%; } }
+
+/*# sourceMappingURL=style.css.map */
