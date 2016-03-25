@@ -1,3 +1,47 @@
+body {
+  font-size: 100%;
+  font-size: 1rem;
+  font-family: 'Ubuntu', sans-serif;
+  /* Add another similar system fonts later */
+  font-weight: 400; }
 
+* {
+  padding: 0 !important;
+  margin: 0 !important;
+  font-kerning: normal; }
+
+p {
+  font-size: 1rem; }
+
+h1 {
+  font-family: 'Lobster', sans-serif;
+  /* Add another similar system fonts later */
+  font-size: 1.5rem;
+  letter-spacing: 1.5px; }
+
+h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: initial;
+  /*weird... somehow h2 and h3 are inheriting h1 letter spacing, so I had to set it to initial*/ }
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: initial; }
+
+h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: initial; }
+
+/* ATTENTION! "main" below is valid to all pages using default <main> html element!*/
+/*-----------------------------   HOME --------------------------------------*/
+.main-home .section-intro {
+  height: 100vh;
+  background-color: #EEE; }
+.main-home .section-lobster-menu {
+  height: 100vh;
+  background-color: #CCC; }
 
 /*# sourceMappingURL=style.css.map */
