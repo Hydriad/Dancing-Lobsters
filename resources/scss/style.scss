@@ -84,6 +84,16 @@ main {
   font-feature-settings: 'liga';
 }
 
+.lobster-button {
+	font-family: 'Lobster', sans-serif; /* Add another similar system fonts later */
+	font-size: 12px;
+	letter-spacing: 1px;
+	&:hover {
+		background-color: #0000ff;
+		text-decoration: underline;
+	}
+}
+
 /*********GENERAL***************************/
 .page{
   position:relative;
