@@ -190,15 +190,74 @@ nav{
 }
 */
 
-#leftclaw{
-  float: left;
-  width: 400px;
+#lobster-claws {
+  width: 40vw;
 }
 
-#rightclaw{
-  float: right;
-  width: 400px;
+#left-finger {
+  -webkit-transform-origin: 30% 90%;
+  animation: left-claws-finger 0.6s ease-out alternate infinite;
 }
+#left-hand {
+  -webkit-transform-origin: 70% 90%;
+  animation: left-claws-hand 0.6s ease-out alternate infinite;
+}
+
+#right-finger{
+  -webkit-transform-origin: 70% 90%;
+  animation: right-claws-finger 0.6s ease-out 0.6s alternate infinite;
+}
+#right-hand {
+  -webkit-transform-origin: 30% 90%;
+  animation: right-claws-hand 0.6s ease-out 0.6s alternate infinite;
+}
+
+@keyframes left-claws-finger {
+  0% {
+    -webkit-transform: rotate(-5deg);
+  }
+  20% {
+    -webkit-transform: rotate(-5deg);
+  }
+  100% {
+    -webkit-transform: rotate(20deg);
+  }
+
+}
+@keyframes left-claws-hand {
+  0% {
+    -webkit-transform: rotate(5deg);
+  }
+  20% {
+    -webkit-transform: rotate(5deg);
+  }
+  100% {
+    -webkit-transform: rotate(-20deg);
+  }
+}
+@keyframes right-claws-finger {
+  0% {
+    -webkit-transform: rotate(5deg);
+  }
+  10% {
+    -webkit-transform: rotate(5deg);
+  }
+  100% {
+    -webkit-transform: rotate(-20deg);
+  }
+}
+@keyframes right-claws-hand {
+  0% {
+    -webkit-transform: rotate(-5deg);
+  }
+  10% {
+    -webkit-transform: rotate(-5deg);
+  }
+  100% {
+    -webkit-transform: rotate(20deg);
+  }
+}
+
 
 #lobster{
   width:40%;
