@@ -351,7 +351,60 @@ nav{
 }
 
 /*********ABOUT***************************/
+#about-wrapper{
+  h1{
+    padding-top:15px;
+    margin-top:0;
+    margin-bottom:0;
+    font-size: 50px;
+  }
+  .page{
+    padding-top: 80px;
+    background-color: papayawhip;
+    height: auto;
+    padding-bottom: 20px;
+  }
+  .faqp{
+    margin-bottom: -10px;
+  }
+  p a{
+    color:tomato;
+    transition:color .4s ease;
+  }
+  p a:hover{
+    color: black;
+    transition:color .4s ease;
+  }
+  
+  h2{
+    padding-top: 15px;
+  }
+}
 
+#aboutcontent{
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  img{
+    width:100%;
+    height: 400px;
+  }
+}
+
+#leftAndrea{
+  float:left;
+  width:45%;
+  padding-right:10%;
+}
+
+#rightHayley{
+  float:right;
+  width:45%;
+}
+
+#team{
+  padding-bottom: 150px;
+}
 /*********BLOG***************************/
 #blog-wrapper{
   h1{
@@ -360,11 +413,11 @@ nav{
     font-size: 50px;
   }
   .page{
-    min-height: calc(100vh - 80px);
     padding-top: 80px;
     background-color: papayawhip;
+    height: auto;
+    padding-bottom: 20px;
   }
-
 }
 
 .italicsub{
@@ -380,6 +433,14 @@ nav{
   h2{
     margin-bottom: -10px;
   }
+  h2 a{
+    color:tomato;
+    transition:color .4s ease;
+  }
+  h2 a:hover{
+    color: black;
+    transition:color .4s ease;
+  }
   img{
     width: 150px;
     height: 100px;
@@ -387,8 +448,8 @@ nav{
     margin-right: 10px;
   }
   .post{
-    margin-top:20px;
-    border: transparent 1px solid;
+    margin-top:50px;
+    height: auto;
   }
 }
 
