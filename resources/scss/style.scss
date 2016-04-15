@@ -1,3 +1,9 @@
+$ourdarkblue: #3264a5;
+$ourlightblue: #e8eff7;
+$ourgrey: #c5cad1;
+$ourlightorg:#ffc1a1;
+$ourdarkorg:#d86d36;
+
 /*# sourceMappingURL=style.css.map */
 body{
   margin: 0;
@@ -107,11 +113,17 @@ main {
   }
 }
 #index-page1 {
-	 background-color: tomato;
+	 background-color: $ourdarkblue;
+   h2,a{
+    color:white;
+   }
 }
 #index-page2 {
 	padding-top: 80px; 
-	background-color: white;
+	background-color: $ourdarkblue;
+  background-image: url("../pics/bg_home_lobster.png");
+  background-size: cover;
+
 }
 
 .blank{
@@ -126,9 +138,8 @@ nav{
   margin:0;
   padding:10px;
   top:0;
-  opacity:.8;
   z-index: 100;
-  background-color: white;
+  background-color: $ourdarkblue;
   display: inline;
   img{
     height: 50px;
@@ -136,6 +147,10 @@ nav{
   }
   a{
     text-decoration: none;
+    color: $ourdarkorg;
+  }
+  h1,h3{
+    color: $ourdarkorg;
   }
 }
 
@@ -160,10 +175,10 @@ nav{
   a, a:visited{
     padding-left: 20px;
     text-decoration: none;
-    color: darkred;
+    color: white;
   }
   a:hover{
-    color: black;
+    color: $ourlightorg;
   }
 }
 
@@ -277,31 +292,32 @@ nav{
 
 #walkthrough-head{
   position:fixed;
-  background-color: papayawhip;
+  background-color: $ourdarkblue;
   z-index: 100;
   top: 50px;
   width: 100%;
-  padding: 20px;
-  img{
-    width: 30px;
-    height: 30px;
+  padding: 0;
+  .row {
+    padding:20px;
   }
-  ul{
-    margin:0;
-    list-style-type: none;
-    padding-left:0;
-    li{
-      display: inline;
-      padding-left: 20px;
-      padding-right: 20px;
-      a,a:visited{
-        text-decoration: none;
-        color: darkred;
-      }
-      a:hover{
-          color: black;
-        }
-    }
+  img{
+    width: 50px;
+    height: 50px;
+    margin: 0 15% 0 15%;
+  }
+  a,a:visited{
+    font-family: "Lobster", "sans-serif";
+    font-size:22px;
+    text-decoration: none;
+    color: white;
+  }
+  a:hover{
+      color: $ourlightorg;
+  }
+  .span_1_of_8{
+    padding-left: 1.2%;
+    padding-right:1.2%;
+    text-align: center;
   }
 }
 
@@ -480,7 +496,11 @@ nav{
 /*********FOOTER***************************/
 footer{
   padding: 10px;
-
+  background-color: $ourdarkblue;
+  p{
+    text-align: center;
+    color: white;
+  }
 }
 
 
@@ -551,6 +571,9 @@ minus 6% or more allotted for padding  */
 }
 .span_3_of_4{
   width: 69%;
+}
+.span_1_of_8{
+  width:10%;
 }
 
 /****MEDIA QUERY: GO FULL WIDTH AT LESS THAN 1024 PIXELS***********/

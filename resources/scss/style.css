@@ -91,11 +91,15 @@ h4 {
     margin-top: 0; }
 
 #index-page1 {
-  background-color: tomato; }
+  background-color: #3264a5; }
+  #index-page1 h2, #index-page1 a {
+    color: white; }
 
 #index-page2 {
   padding-top: 80px;
-  background-color: white; }
+  background-color: #3264a5;
+  background-image: url("../pics/bg_home_lobster.png");
+  background-size: cover; }
 
 .blank {
   border: papayawhip 2px solid; }
@@ -107,15 +111,17 @@ nav {
   margin: 0;
   padding: 10px;
   top: 0;
-  opacity: .8;
   z-index: 100;
-  background-color: white;
+  background-color: #3264a5;
   display: inline; }
   nav img {
     height: 50px;
     float: left; }
   nav a {
-    text-decoration: none; }
+    text-decoration: none;
+    color: #d86d36; }
+  nav h1, nav h3 {
+    color: #d86d36; }
 
 #navleft {
   margin-left: 60px;
@@ -135,9 +141,9 @@ nav {
   #navright a, #navright a:visited {
     padding-left: 20px;
     text-decoration: none;
-    color: darkred; }
+    color: white; }
   #navright a:hover {
-    color: black; }
+    color: #ffc1a1; }
 
 /*********HOME/LANDING***************************/
 #intro {
@@ -219,27 +225,28 @@ nav {
 
 #walkthrough-head {
   position: fixed;
-  background-color: papayawhip;
+  background-color: #3264a5;
   z-index: 100;
   top: 50px;
   width: 100%;
-  padding: 20px; }
+  padding: 0; }
+  #walkthrough-head .row {
+    padding: 20px; }
   #walkthrough-head img {
-    width: 30px;
-    height: 30px; }
-  #walkthrough-head ul {
-    margin: 0;
-    list-style-type: none;
-    padding-left: 0; }
-    #walkthrough-head ul li {
-      display: inline;
-      padding-left: 20px;
-      padding-right: 20px; }
-      #walkthrough-head ul li a, #walkthrough-head ul li a:visited {
-        text-decoration: none;
-        color: darkred; }
-      #walkthrough-head ul li a:hover {
-        color: black; }
+    width: 50px;
+    height: 50px;
+    margin: 0 15% 0 15%; }
+  #walkthrough-head a, #walkthrough-head a:visited {
+    font-family: "Lobster", "sans-serif";
+    font-size: 22px;
+    text-decoration: none;
+    color: white; }
+  #walkthrough-head a:hover {
+    color: #ffc1a1; }
+  #walkthrough-head .span_1_of_8 {
+    padding-left: 1.2%;
+    padding-right: 1.2%;
+    text-align: center; }
 
 .walkthrough-intro .circlelink {
   color: white;
@@ -372,7 +379,11 @@ nav {
 
 /*********FOOTER***************************/
 footer {
-  padding: 10px; }
+  padding: 10px;
+  background-color: #3264a5; }
+  footer p {
+    text-align: center;
+    color: white; }
 
 /*********FLEXBOX***************************/
 .flex-container {
@@ -438,6 +449,9 @@ minus 6% or more allotted for padding  */
 
 .span_3_of_4 {
   width: 69%; }
+
+.span_1_of_8 {
+  width: 10%; }
 
 /****MEDIA QUERY: GO FULL WIDTH AT LESS THAN 1024 PIXELS***********/
 @media only screen and (max-width: 1024px) {
