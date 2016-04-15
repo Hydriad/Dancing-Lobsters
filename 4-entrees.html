@@ -6,6 +6,9 @@
   <title>Dancing Lobsters - Entrees</title>
   <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js" charset="utf-8"></script>
   <link href = "resources/scss/style.css" type="text/css" rel = "stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,400italic,700,700italic" rel="stylesheet" type="text/css">  <!-- ***** Needs to be included in all html files -->
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css"> <!-- ***** Needs to be included in all html files -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css"> <!-- ***** Needs to be included in all html files -->
   <script type="text/javascript" src="js/javascript.js"></script>
 </head>
 
@@ -70,13 +73,23 @@
           </p>
         </div>
         <div class="col span_2_of_3" id="introlinks">
-        <br><br><br><br><br><br><br><br>
-          <a class = "circlelink" href ="#wtable">Table Setting</a>
-          <a class = "circlelink" href="#wdosdonts">Do's and Don'ts</a>
-          <a class = "circlelink" href="#wdishes">Dishes</a>
+          <div class="row group">
+            <div class="col span_1_of_3">
+              <img src="resources/icons/ic_entrees.png"/>
+              <a class = "circlelink" href ="#wtable">Table Setting</a>
+            </div>
+            <div class="col span_1_of_3">
+              <img src="resources/icons/ic_entrees.png"/>
+              <a class = "circlelink" href="#wdosdonts">Do's and Don'ts</a>
+            </div>
+            <div class="col span_1_of_3">
+              <img src="resources/icons/ic_entrees.png"/>
+              <a class = "circlelink" href="#wdishes">Dishes</a>
+            </div>
+          </div>
         </div>
       </div>
-      <a class="downarrow" href ="#wtable">Table Setting</a>
+      <a class="downarrow" href ="#wtable">Table Setting<br/><i class="material-icons">arrow_downward</i></a>
     </section>
 
     <section class = "page walkthrough-table" id="wtable">
@@ -90,7 +103,7 @@
           <p>Quisque nisi arcu, scelerisque id neque quis, ornare ullamcorper tortor. Duis venenatis, orci maximus tempus eleifend, lectus nisl fermentum lorem, ac ullamcorper eros purus a tortor. Sed a tortor et velit luctus elementum sed sed odio. Aenean placerat ipsum nisl.</p>
         </div>
       </div>
-      <a class="downarrow" href ="#wdosdonts">Do's and Don'ts</a>
+      <a class="downarrow" href ="#wdosdonts">Do's and Don'ts<br/><i class="material-icons">arrow_downward</i></a>
     </section>
 
     <section class = "page walkthrough-dosdonts" id ="wdosdonts">
@@ -123,7 +136,7 @@
           <p>lectus nisl fermentum lorem, ac ullamcorper eros purus a tortor. Sed a tortor et velit luctus elementum sed sed odio. Aenean placerat ipsum nisl.</p>
         </div>
       </div>
-      <a class="downarrow" href ="#wdishes">Dishes</a>
+      <a class="downarrow" href ="#wdishes">Dishes<br/><i class="material-icons">arrow_downward</i></a>
     </section>
 
     <section class = "page walkthrough-dishes" id="wdishes">

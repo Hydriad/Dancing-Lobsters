@@ -156,14 +156,17 @@ nav {
     display: block;
     margin-top: 5vh; }
 
-/*
-.downarrow{
+.downarrow {
+  font-family: 'Lobster', sans-serif;
+  /* Add another similar system fonts later */
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  color: white;
+  text-align: center;
   position: absolute;
-  bottom: 30px;
-  left:50%;
-  text-decoration: none;
-}
-*/
+  bottom: 3%;
+  left: 46%; }
+
 #lobster-claws {
   width: 40vw; }
 
@@ -238,7 +241,7 @@ nav {
     margin: 0 15% 0 15%; }
   #walkthrough-head a, #walkthrough-head a:visited {
     font-family: "Lobster", "sans-serif";
-    font-size: 22px;
+    font-size: 1.5rem;
     text-decoration: none;
     color: white; }
   #walkthrough-head a:hover {
@@ -248,19 +251,34 @@ nav {
     padding-right: 1.2%;
     text-align: center; }
 
-.walkthrough-intro .circlelink {
-  color: white;
-  text-decoration: none;
-  font-size: 30px;
-  font-family: "Lobster";
-  padding: 20px; }
+.walkthrough-intro {
+  background-color: #d86d36;
+  padding-right: 0; }
+  .walkthrough-intro p, .walkthrough-intro h1, .walkthrough-intro h2 {
+    color: white; }
+  .walkthrough-intro .circlelink {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: "Lobster";
+    padding: 20px;
+    text-align: center; }
 
 #introtext {
-  padding: 3%; }
+  padding: 8% 3% 3% 3%; }
 
 #introlinks {
   padding: 3%;
   text-align: center; }
+  #introlinks .span_1_of_3 {
+    padding: 12% 2% 2% 2%; }
+  #introlinks img {
+    margin: 0 18% 0 18%; }
+
+.walkthrough-table .downarrow {
+  color: #d86d36; }
+.walkthrough-table h1 {
+  color: #d86d36; }
 
 #tableimg {
   padding: 2%; }
@@ -268,8 +286,11 @@ nav {
 #tabledesc {
   padding: 6% 4% 4% 4%; }
 
+.walkthrough-dosdonts .downarrow {
+  color: #d86d36; }
 .walkthrough-dosdonts h1 {
-  padding: 2% 0 0 4%; }
+  padding: 5% 0 0 4%;
+  color: #d86d36; }
 
 #dosdontsleft, #dosdontsright {
   padding: 1% 5% 1% 5%; }
@@ -279,6 +300,14 @@ nav {
     padding-right: 20px; }
   #dosdontsleft p, #dosdontsright p {
     padding-bottom: 20px; }
+  #dosdontsleft h2, #dosdontsright h2 {
+    margin-top: 0; }
+
+.walkthrough-dishes .downarrow {
+  color: #d86d36; }
+.walkthrough-dishes h1 {
+  padding: 5% 0 0 4%;
+  color: #d86d36; }
 
 /*********ABOUT***************************/
 #about-wrapper h1 {
