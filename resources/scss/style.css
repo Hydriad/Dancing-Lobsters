@@ -120,9 +120,9 @@ nav {
     float: left; }
   nav a {
     text-decoration: none;
-    color: #d86d36; }
+    color: #fb7c3c; }
   nav h1, nav h3 {
-    color: #d86d36; }
+    color: #fb7c3c; }
 
 #navleft {
   margin-left: 60px;
@@ -253,7 +253,7 @@ nav {
     text-align: center; }
 
 .walkthrough-intro {
-  background-color: #d86d36;
+  background-color: #fb7c3c;
   padding-right: 0; }
   .walkthrough-intro p, .walkthrough-intro h1, .walkthrough-intro h2 {
     color: white; }
@@ -277,9 +277,9 @@ nav {
     margin: 0 18% 0 18%; }
 
 .walkthrough-table .downarrow {
-  color: #d86d36; }
+  color: #fb7c3c; }
 .walkthrough-table h1 {
-  color: #d86d36; }
+  color: #fb7c3c; }
 
 #tableimg {
   padding: 2%; }
@@ -288,10 +288,10 @@ nav {
   padding: 6% 4% 4% 4%; }
 
 .walkthrough-dosdonts .downarrow {
-  color: #d86d36; }
+  color: #fb7c3c; }
 .walkthrough-dosdonts h1 {
   padding: 5% 0 0 4%;
-  color: #d86d36; }
+  color: #fb7c3c; }
 
 #dosdontsleft, #dosdontsright {
   padding: 1% 5% 1% 5%; }
@@ -305,10 +305,10 @@ nav {
     margin-top: 0; }
 
 .walkthrough-dishes .downarrow {
-  color: #d86d36; }
+  color: #fb7c3c; }
 .walkthrough-dishes h1 {
   padding: 5% 0 0 4%;
-  color: #d86d36; }
+  color: #fb7c3c; }
 
 /*********ABOUT***************************/
 #about-wrapper h1 {
