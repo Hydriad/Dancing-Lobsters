@@ -3,6 +3,7 @@ $ourlightblue: #e8eff7;
 $ourgrey: #c5cad1;
 $ourlightorg:#ffc1a1;
 $ourdarkorg:#fb7c3c;
+$ourdarkerorg:#cc5a21;
 
 /*# sourceMappingURL=style.css.map */
 body{
@@ -91,15 +92,16 @@ main {
 }
 
 .lobster-button {
-	font-family: 'Lobster', sans-serif; /* Add another similar system fonts later */
-	font-size: 12px;
-	letter-spacing: 1px;
-	&:hover {
-		background-color: #0000ff;
-		text-decoration: underline;
-	}
-}
+	font-family: 'Lobster Two', cursive; /* Add another similar system fonts later */
+  font-style: italic;
+  font-size: 18px;
 
+	&:hover {
+    path {
+      fill: $ourdarkerorg;
+    }
+  }
+}
 /*********GENERAL***************************/
 .page{
   position:relative;
@@ -107,7 +109,7 @@ main {
   height: 100vh;
   padding: 0;
   margin: 0;
- 
+  
   h1{
     margin-top:0;
   }
@@ -122,8 +124,10 @@ main {
 	padding-top: 80px; 
 	background-color: $ourdarkblue;
   background-image: url("../pics/bg_home_lobster.png");
+  background-repeat: no-repeat;
   background-size: 130%;
   background-position: center;
+
 }
 
 .blank{

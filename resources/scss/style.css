@@ -72,13 +72,12 @@ h4 {
   font-feature-settings: 'liga'; }
 
 .lobster-button {
-  font-family: 'Lobster', sans-serif;
+  font-family: 'Lobster Two', cursive;
   /* Add another similar system fonts later */
-  font-size: 12px;
-  letter-spacing: 1px; }
-  .lobster-button:hover {
-    background-color: #0000ff;
-    text-decoration: underline; }
+  font-style: italic;
+  font-size: 18px; }
+  .lobster-button:hover path {
+    fill: #cc5a21; }
 
 /*********GENERAL***************************/
 .page {
@@ -99,6 +98,7 @@ h4 {
   padding-top: 80px;
   background-color: #3264a5;
   background-image: url("../pics/bg_home_lobster.png");
+  background-repeat: no-repeat;
   background-size: 130%;
   background-position: center; }
 
