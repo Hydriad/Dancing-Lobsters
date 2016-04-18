@@ -31,14 +31,16 @@ a {
 	text-decoration: none;
 	
 	&.button {
-		font-family: 'Lobster', sans-serif; /* Add another similar system fonts later */
+		font-family: "Lobster Two", cursive;
+    font-style: italic;
 		font-size: 1.5rem;
 		letter-spacing: 1px;
 	}
 }
 
 h1 {
-	font-family: 'Lobster', sans-serif; /* Add another similar system fonts later */
+	font-family: "Lobster Two", cursive;
+  font-style: italic;
 	font-size: 1.5rem;
 	letter-spacing: 1px;
 }
@@ -202,7 +204,8 @@ nav{
 }
 
 .downarrow{
-  font-family: 'Lobster', sans-serif; /* Add another similar system fonts later */
+  font-family: "Lobster Two", cursive;
+  font-style: italic;
   font-size: 1.5rem;
   letter-spacing: 1px;
   color: white;
@@ -298,6 +301,9 @@ nav{
   }
 }
 
+
+
+
 #walkthrough-head{
   position:fixed;
   background-color: $ourdarkblue;
@@ -314,13 +320,39 @@ nav{
     margin: 0 15% 0 15%;
   }
   a,a:visited{
-    font-family: "Lobster", "sans-serif";
+    font-family: "Lobster Two", cursive;
+    font-style: italic;
     font-size:1.5rem;
     text-decoration: none;
     color: white;
   }
-  a:hover{
-      color: $ourlightorg;
+  a:hover {
+      color: $ourdarkorg;
+      
+      #ic-arrival {
+        content:url(../icons/ic_arrival_hover.svg);
+      }
+      #ic-ordering {
+        content:url(../icons/ic_ordering_hover.svg);
+      }
+      #ic-appetizers {
+        content:url(../icons/ic_appetizers_hover.svg);
+      }
+      #ic-entrees {
+        content:url(../icons/ic_entrees_hover.svg);
+      }
+      #ic-leavingtable {
+        content:url(../icons/ic_leavingtable_hover.svg);
+      }
+      #ic-dessert {
+        content:url(../icons/ic_dessert_hover.svg);
+      }
+      #ic-paying {
+        content:url(../icons/ic_paying_hover.svg);
+      }
+      #ic-departure {
+        content:url(../icons/ic_departure_hover.svg);
+      }
   }
   .span_1_of_8{
     padding-left: 1.2%;
@@ -519,7 +551,8 @@ nav{
   padding: 0 10% 0 5%;
   h2{
     padding-top: 20px;
-    font-family: 'Lobster', sans-serif;
+    font-family: "Lobster Two", cursive;
+    font-style: italic;
     font-size: 1.5rem;
     letter-spacing: 1px;
   }
