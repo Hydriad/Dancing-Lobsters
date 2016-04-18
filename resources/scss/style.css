@@ -278,9 +278,17 @@ nav {
     color: white;
     text-decoration: none;
     font-size: 30px;
-    font-family: "Lobster";
-    padding: 20px;
+    font-family: "Lobster Two", cursive;
+    font-style: italic;
     text-align: center; }
+    .walkthrough-intro .circlelink:hover {
+      color: #3264a5; }
+      .walkthrough-intro .circlelink:hover #ic-tablesetting {
+        content: url(../icons/ic_tablesetting_hover.svg); }
+      .walkthrough-intro .circlelink:hover #ic-dosanddonts {
+        content: url(../icons/ic_dosanddonts_hover.svg); }
+      .walkthrough-intro .circlelink:hover #ic-dishes {
+        content: url(../icons/ic_dishes_hover.svg); }
 
 #introtext {
   padding: 8% 3% 3% 3%; }
@@ -291,7 +299,7 @@ nav {
   #introlinks .span_1_of_3 {
     padding: 12% 2% 2% 2%; }
   #introlinks img {
-    margin: 0 18% 0 18%; }
+    margin: 0 25% 0 25%; }
 
 .walkthrough-table .downarrow {
   color: #fb7c3c; }
