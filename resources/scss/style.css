@@ -317,6 +317,11 @@ nav {
 #tabledesc {
   padding: 6% 4% 4% 4%; }
 
+#table_setting .shape_hover {
+  opacity: 0; }
+#table_setting a:hover .shape_hover {
+  opacity: 1; }
+
 .walkthrough-dosdonts .downarrow {
   color: #fb7c3c; }
 .walkthrough-dosdonts h1 {
