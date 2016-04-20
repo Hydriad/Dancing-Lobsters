@@ -421,6 +421,17 @@ nav{
 #tabledesc{
   padding:6% 4% 4% 4%;
 }
+#table_setting {
+  .shape_hover {
+    opacity:0;
+  }
+  a:hover {
+    .shape_hover {
+      opacity:1;
+    }
+  }
+}
+
 .walkthrough-dosdonts{
   .downarrow{
     color:$ourdarkorg;
