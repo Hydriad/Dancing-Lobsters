@@ -23,5 +23,16 @@ $(function() {
       }
     }
   });
+
+  $( "#dinner_plate" ).click(function() {
+    $( "#tabledesc" ).css("opacity", 0);
+    $( "#tabledesc h2" ).html( "Dinner Plate" );
+    $( "#tabledesc p" ).html( "Text paragraph about dinner plate" );
+    $( "#tabledesc" ).animate({
+    opacity: 1
+    }, 400);
+  });
 });
 //end smooth scrolling code
+
+

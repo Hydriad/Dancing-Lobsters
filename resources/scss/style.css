@@ -225,10 +225,10 @@ nav {
 #walkthrough-wrapper h1 {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 50px; }
+  font-size: 2rem; }
 #walkthrough-wrapper .page {
-  height: calc(100vh - 120px);
-  padding-top: 120px; }
+  height: calc(100vh - 100px);
+  padding-top: 100px; }
 
 #walkthrough-head {
   position: fixed;
@@ -310,6 +310,9 @@ nav {
   color: #fb7c3c; }
 .walkthrough-table h1 {
   color: #fb7c3c; }
+.walkthrough-table svg {
+  height: 450px;
+  background-color: #3264a5; }
 
 #tableimg {
   padding: 2%; }
