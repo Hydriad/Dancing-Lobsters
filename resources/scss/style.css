@@ -325,11 +325,18 @@ nav {
 #table_setting a:hover .shape_hover {
   opacity: 1; }
 
+#table-setting-container {
+  margin: 20px;
+  padding: 15px 0 0 12%;
+  background-color: #3264a5; }
+
 .walkthrough-dosdonts .downarrow {
   color: #fb7c3c; }
 .walkthrough-dosdonts h1 {
   padding: 5% 0 0 4%;
   color: #fb7c3c; }
+.walkthrough-dosdonts h2 {
+  font-size: 1.4rem; }
 
 #dosdontsleft, #dosdontsright {
   padding: 1% 5% 1% 5%; }
@@ -338,7 +345,7 @@ nav {
     float: left;
     padding-right: 20px; }
   #dosdontsleft p, #dosdontsright p {
-    padding-bottom: 20px; }
+    padding-bottom: 30px; }
   #dosdontsleft h2, #dosdontsright h2 {
     margin-top: 0; }
 
