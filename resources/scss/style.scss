@@ -476,8 +476,51 @@ nav{
   h1{
     padding: 5% 0 0 4%;
     color: $ourdarkorg;
+    margin-bottom:30px;
   }
 }
+
+#wdishes .row{
+  padding-top:0;
+  padding-bottom: 10px;
+}
+
+
+
+#dishthumbs-container{
+  padding-left:10%;
+  padding-top:40px;
+}
+
+.dishthumb{
+  p{
+    margin-top:-20px;
+    z-index:5;
+    width:90%;
+    background-color: black;
+    color:white;
+    opacity: .6;
+  }
+  img{
+    width: 90%;
+    height:20vh;
+    z-index:4;
+  }
+}
+
+#dishlarge{
+  margin-left:-12%;
+  padding-top:40px;
+  img{
+    width:100%;
+    height: 25vh;
+  }
+  p{
+    z-index:5;
+    width:100%;
+  }
+}
+
 
 /*********ABOUT***************************/
 #about-wrapper{
