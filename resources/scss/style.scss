@@ -427,8 +427,12 @@ nav{
   padding:6% 4% 4% 4%;
 }
 #table_setting {
+  a {
+    cursor: pointer;
+  }
   .shape_hover {
     opacity:0;
+    transition: opacity 0.3s ease-out;
   }
   a:hover {
     .shape_hover {

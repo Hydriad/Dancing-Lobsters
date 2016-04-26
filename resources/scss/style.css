@@ -320,8 +320,11 @@ nav {
 #tabledesc {
   padding: 6% 4% 4% 4%; }
 
+#table_setting a {
+  cursor: pointer; }
 #table_setting .shape_hover {
-  opacity: 0; }
+  opacity: 0;
+  transition: opacity 0.3s ease-out; }
 #table_setting a:hover .shape_hover {
   opacity: 1; }
 
