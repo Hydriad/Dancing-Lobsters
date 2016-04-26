@@ -432,7 +432,7 @@ nav{
   }
   .shape_hover {
     opacity:0;
-    transition: opacity 0.3s ease-out;
+    transition: opacity 0.2s ease-out;
   }
   a:hover {
     .shape_hover {
@@ -442,7 +442,7 @@ nav{
 }
 #table-setting-container{
   margin: 20px;
-  padding:15px 0 0 12%;
+  padding:15px 0 0 0;
   background-color: $ourdarkblue;
 }
 
