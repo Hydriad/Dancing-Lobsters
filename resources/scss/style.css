@@ -361,33 +361,115 @@ nav {
 
 #wdishes .row {
   padding-top: 0;
-  padding-bottom: 10px; }
+  margin: 20px 0 20px 0 !important; }
 
 #dishthumbs-container {
-  padding-left: 10%;
-  padding-top: 40px; }
+  margin-left: 6%; }
 
-.dishthumb p {
-  margin-top: -20px;
+#dishthumbs-container:after {
+  clear: both; }
+
+.dishthumb {
+  position: relative;
+  float: left;
+  margin: 10px !important;
+  width: 180px !important;
+  height: 120px !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../pics/spagetti01.jpg"); }
+  .dishthumb p {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    width: calc(100% - 12px);
+    padding: 6px;
+    background-color: rgba(50, 100, 165, 0.7);
+    color: white; }
+
+.dishlarge:not(.slideshow) img {
+  width: 100%;
+  height: 25vh; }
+.dishlarge:not(.slideshow) p {
   z-index: 5;
-  width: 90%;
-  background-color: black;
-  color: white;
-  opacity: .6; }
-.dishthumb img {
-  width: 90%;
-  height: 20vh;
-  z-index: 4; }
+  width: 100%; }
 
-#dishlarge {
-  margin-left: -12%;
-  padding-top: 40px; }
-  #dishlarge img {
-    width: 100%;
-    height: 25vh; }
-  #dishlarge p {
-    z-index: 5;
-    width: 100%; }
+/*Slideshow - JS from http://www.slidesjs.com/ */
+/*CUSTOMIZED style */
+#slides {
+  display: none;
+  position: relative; }
+
+#slides div {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+#slides .slidesjs-navigation {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  top: calc(50% - 18px);
+  margin: 0 5px;
+  color: #cc5a21;
+  background-color: white;
+  -moz-border-radius: 18px;
+  -webkit-border-radius: 18px;
+  border-radius: 24px; }
+  #slides .slidesjs-navigation:hover {
+    color: white;
+    background-color: #cc5a21; }
+
+#slides .slidesjs-previous {
+  left: 0;
+  z-index: 143; }
+
+#slides .slidesjs-next {
+  right: 0;
+  z-index: 142; }
+
+.slidesjs-pagination {
+  margin: 6px 0 0;
+  float: right;
+  list-style: none; }
+
+.slidesjs-pagination li {
+  float: left;
+  margin: 0 1px; }
+
+.slidesjs-pagination li a {
+  display: block;
+  width: 13px;
+  height: 0;
+  padding-top: 13px;
+  background-image: url(../plugins/slidesjs3/img/pagination.png);
+  background-position: 0 0;
+  float: left;
+  overflow: hidden; }
+
+.slidesjs-pagination li a.active,
+.slidesjs-pagination li a:hover.active {
+  background-position: 0 -13px; }
+
+.slidesjs-pagination li a:hover {
+  background-position: 0 -26px; }
+
+#slides a:hover,
+#slides a:active {
+  color: #cc5a21; }
+
+.navbar {
+  overflow: hidden; }
+
+/***** SlidesJS Required: These styles are required if you'd like a responsive slideshow */
+#slides {
+  display: none; }
+
+.slide-container {
+  margin: 0 0;
+  width: 360px;
+  height: 240px; }
 
 /*********ABOUT***************************/
 #about-wrapper h1 {

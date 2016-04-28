@@ -24,11 +24,25 @@ $(function() {
     }
   });
 
+  // TABLE SETTING - Change content of utensil description (right side)
   $( "#dinner_plate" ).click(function() {
     $( "#tabledesc" ).css("opacity", 0);
     $( "#tabledesc h2" ).html( "Dinner Plate" );
     $( "#tabledesc p" ).html( "Text paragraph about dinner plate" );
     $( "#tabledesc" ).animate({
+    opacity: 1
+    }, 400);
+  });
+
+  // DISHES - Change content of larger dish (right side)
+  $(".dishthumb").click(function() {
+    var idDivContent = "#dishlarge-"+$(this).attr("id");
+    
+    $(".dishlarge").css("display", "none");
+    $( idDivContent ).css("display", "block");
+
+    $( idDivContent ).css("opacity", 0);
+    $( idDivContent ).animate({
     opacity: 1
     }, 400);
   });

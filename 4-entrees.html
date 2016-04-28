@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Dancing Lobsters - Entrees</title>
   <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js" charset="utf-8"></script>
+  <script src="resources/plugins/slidesjs3/source/jquery.slides.min.js"></script>
   <link href = "resources/scss/style.css" type="text/css" rel = "stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,400italic,700,700italic" rel="stylesheet" type="text/css">  <!-- ***** Needs to be included in all html files -->
   <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css"> <!-- ***** Needs to be included in all html files -->
@@ -546,47 +547,74 @@
       <h1>Dishes</h1>
       <div class="row group">
         <div class="col span_2_of_3" id="dishthumbs-container" >
-          <!-- start inner row of 3 -->
-          <div class="row group">
-            <div class="col span_1_of_3 dishthumb">
-              <img src="resources/pics/blankimg.png"/>
-              <p>Spaghetti</p>
-            </div>
-            <div class="col span_1_of_3 dishthumb" >
-              <img src="resources/pics/blankimg.png"/>
-              <p>Spaghetti</p>
-            </div>
-            <div class="col span_1_of_3 dishthumb">
-              <img src="resources/pics/blankimg.png"/>
-              <p>Spaghetti</p>
-            </div>
+          <div class="dishthumb" id="spaghetti" style="background-image: url('resources/pics/spagetti01.jpg');">
+            <p>Spaghetti</p>
           </div>
-          <!-- end inner row of 3 -->
-          <!-- start inner row of 3 -->
-          <div class="row group">
-            <div class="col span_1_of_3 dishthumb" >
-              <img src="resources/pics/blankimg.png"/>
-              <p>Spaghetti</p>
-            </div>
-            <div class="col span_1_of_3 dishthumb" >
-              <img src="resources/pics/blankimg.png"/>
-              <p>Spaghetti</p>
-            </div>
-            <div class="col span_1_of_3 dishthumb" >
-              <img src="resources/pics/blankimg.png"/>
-              <p>Spaghetti</p>
-            </div>
+          <div class="dishthumb" id="lobster" style="background-image: url('resources/pics/lobster-3.jpg');">
+            <p>Lobster</p>
           </div>
-          <!-- end inner row of 3 -->
+          <div class="dishthumb" id="salmon" style="background-image: url('resources/pics/Salmon-With-Harico.jpg');">
+            <p>Grilled Salmon</p>
+          </div>
+          <div class="dishthumb" id="steak" style="background-image: url('resources/pics/Meat-Steaks-Photo-1.jpg');">
+            <p>Grilled Steak</p>
+          </div>
+          <div class="dishthumb" >
+            <p>Dish</p>
+          </div>
+          <div class="dishthumb" >
+            <p>Dish</p>
+          </div>
         </div>
-        <div class="col span_1_of_3" id="dishlarge" >
-          <img src="resources/pics/blankimg.png"/>
+        <div class="col span_1_of_3 dishlarge slideshow" id="dishlarge-spaghetti">
+          <div class="slide-container">
+            <div id="slides">
+              <!--
+              <div style="background-image: url('resources/pics/Meat-Steaks-Photo-1.jpg');"><img></div>
+              <div style="background-image: url('resources/pics/Meat-Steaks-Photo-1.jpg');"><img></div>
+              <div style="background-image: url('resources/pics/Meat-Steaks-Photo-1.jpg');"><img></div>
+              -->
+              <img src='resources/pics/spagetti01.jpg'>
+              <img src='resources/pics/spagetti01.jpg'>
+              <img src='resources/pics/spagetti01.jpg'>
+              <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="material-icons">keyboard_arrow_left</i></a>
+              <a href="#" class="slidesjs-next slidesjs-navigation"><i class="material-icons">keyboard_arrow_right</i></a>
+            </div>
+          </div>
+          <!-- SlidesJS Required: Initialize SlidesJS with a jQuery doc ready -->
+          <script>
+            $(function() {
+              $('#slides').slidesjs({
+                width: 360,
+                height: 240,
+                navigation: false
+              });
+            });
+          </script>
+          <!-- End SlidesJS Required -->
           <h3>Spaghetti</h3>
           <p>Difficulty rating: 4/5 lobsters</p>
-          <p>A traditional Itslian dish of long, thin noodles with suace. Be careful to avoid splashing the sauce onto your shirt!</p>
+          <p>A traditional Italian dish of long, thin noodles with sauce. Be careful to avoid splashing the sauce onto your shirt!</p>
         </div>
-
-
+        <div class="col span_1_of_3 dishlarge" id="dishlarge-lobster" style="display: none;">
+          <img src="resources/pics/blankimg.png"/>
+          <h3>Lobster</h3>
+          <p>Difficulty rating: 5/5 lobsters</p>
+          <p>Quisque nisi arcu, scelerisque id neque quis, ornare ullamcorper tortor. Duis venenatis, orci maximus tempus eleifend, lectus nisl fermentum lorem, ac ullamcorper eros purus a tortor.</p>
+        </div>
+        <div class="col span_1_of_3 dishlarge" id="dishlarge-salmon" style="display: none;">
+          <img src="resources/pics/blankimg.png"/>
+          <h3>Grilled Salmon</h3>
+          <p>Difficulty rating: 1/5 lobsters</p>
+          <p>Quisque nisi arcu, scelerisque id neque quis, ornare ullamcorper tortor. Duis venenatis, orci maximus tempus eleifend, lectus nisl fermentum lorem, ac ullamcorper eros purus a tortor.</p>
+        </div>
+        <div class="col span_1_of_3 dishlarge" id="dishlarge-steak" style="display: none;">
+          <img src="resources/pics/blankimg.png"/>
+          <h3>Grilled Steak</h3>
+          <p>Difficulty rating: 2/5 lobsters</p>
+          <p>Quisque nisi arcu, scelerisque id neque quis, ornare ullamcorper tortor. Duis venenatis, orci maximus tempus eleifend, lectus nisl fermentum lorem, ac ullamcorper eros purus a tortor.</p>
+        </div>
+      </div>
       <a class="downarrow" href ="#wintro"><i class="material-icons">arrow_upward</i><br/>Back to Top</a>
     </section>
   </wrapper>
