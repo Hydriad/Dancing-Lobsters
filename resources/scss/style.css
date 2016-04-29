@@ -279,21 +279,6 @@ nav {
   padding-right: 0; }
   .walkthrough-intro p, .walkthrough-intro h1, .walkthrough-intro h2 {
     color: white; }
-  .walkthrough-intro .circlelink {
-    color: white;
-    text-decoration: none;
-    font-size: 30px;
-    font-family: "Lobster Two", cursive;
-    font-style: italic;
-    text-align: center; }
-    .walkthrough-intro .circlelink:hover {
-      color: #3264a5; }
-      .walkthrough-intro .circlelink:hover #ic-tablesetting {
-        content: url(../icons/ic_tablesetting_hover.svg); }
-      .walkthrough-intro .circlelink:hover #ic-dosanddonts {
-        content: url(../icons/ic_dosanddonts_hover.svg); }
-      .walkthrough-intro .circlelink:hover #ic-dishes {
-        content: url(../icons/ic_dishes_hover.svg); }
 
 #introtext {
   padding: 8% 3% 3% 3%; }
@@ -301,10 +286,29 @@ nav {
 #introlinks {
   padding: 3%;
   text-align: center; }
-  #introlinks .span_1_of_3 {
-    padding: 12% 2% 2% 2%; }
-  #introlinks img {
-    margin: 0 25% 0 25%; }
+  #introlinks .span_1_of_2, #introlinks .span_1_of_3 {
+    padding: 12% 2% 2% 2%;
+    text-align: center; }
+  #introlinks .circlelink {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: "Lobster Two", cursive;
+    font-style: italic;
+    text-align: center; }
+    #introlinks .circlelink img {
+      margin: 0 25% 0 25%;
+      width: 100px;
+      height: 100px; }
+    #introlinks .circlelink:hover {
+      color: #3264a5; }
+      #introlinks .circlelink:hover #ic-tablesetting {
+        content: url(../icons/ic_tablesetting_hover.svg); }
+      #introlinks .circlelink:hover #ic-dosanddonts {
+        content: url(../icons/ic_dosanddonts_hover.svg); }
+      #introlinks .circlelink:hover #ic-dishes {
+        content: url(../icons/ic_dishes_hover.svg); }
 
 .walkthrough-table .downarrow {
   color: #fb7c3c; }

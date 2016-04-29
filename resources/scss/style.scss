@@ -363,19 +363,38 @@ nav{
   }
 }
 
-.walkthrough-intro{
+.walkthrough-intro {
   background-color: $ourdarkorg;
   padding-right:0;
   p, h1, h2{
     color: white;
   }
+}
+#introtext{
+  padding:8% 3% 3% 3%;
+}
+#introlinks{
+  padding:3%;
+  text-align: center;
+  .span_1_of_2, .span_1_of_3 {
+    padding: 12% 2% 2% 2%;
+    text-align: center;
+  }
   .circlelink{
-    color:white;
+    display: inline-block;
+    color: white;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 2rem;
     font-family: "Lobster Two", cursive;
     font-style: italic;
     text-align: center;
+
+    img {
+      margin: 0 25% 0 25%;
+      width: 100px;
+      height: 100px;
+    }
+
     &:hover {
       color: $ourdarkblue;
       
@@ -389,19 +408,6 @@ nav{
         content:url(../icons/ic_dishes_hover.svg);
       }
     }
-  }
-}
-#introtext{
-  padding:8% 3% 3% 3%;
-}
-#introlinks{
-  padding:3%;
-  text-align: center;
-  .span_1_of_3{
-    padding: 12% 2% 2% 2%;
-  }
-  img{
-    margin: 0 25% 0 25%;
   }
 }
 
