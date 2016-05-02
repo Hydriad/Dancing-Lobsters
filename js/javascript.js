@@ -48,9 +48,6 @@ $(function() {
     $(".dishlarge").css("display", "none");
     $( idDivContent ).css("display", "block");
 
-    $('.slidesjs-container, .slidesjs-control').css("width", "360px");
-    $('.slidesjs-container, .slidesjs-control').css("height", "202px");
-
     $( idDivContent ).css("opacity", 0);
     $( idDivContent ).animate({
     opacity: 1
