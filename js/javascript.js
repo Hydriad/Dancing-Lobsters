@@ -25,11 +25,19 @@ $(function() {
   });
 
   // TABLE SETTING - Change content of utensil description (right side)
-  $( "#dinner_plate" ).click(function() {
-    $( "#tabledesc" ).css("opacity", 0);
-    $( "#tabledesc h2" ).html( "Dinner Plate" );
-    $( "#tabledesc p" ).html( "Text paragraph about dinner plate" );
-    $( "#tabledesc" ).animate({
+  $("#table-setting-container a").click(function() {
+    //$(this).classList.add("object-selected");
+    $("#table-setting-container a").attr("class", "");
+    $(this).attr("class", "object-selected");
+
+
+    var idDivContent = "#tabledesc-"+$(this).attr("id");
+    
+    $(".tabledesc").css("display", "none");
+    $( idDivContent ).css("display", "block");
+
+    $( idDivContent ).css("opacity", 0);
+    $( idDivContent ).animate({
     opacity: 1
     }, 400);
   });

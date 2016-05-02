@@ -435,7 +435,7 @@ nav{
 #tableimg{
   padding:2%;
 }
-#tabledesc{
+.tabledesc{
   padding:6% 4% 4% 4%;
 }
 #table_setting {
@@ -450,6 +450,9 @@ nav{
     .shape_hover {
       opacity:1;
     }
+  }
+  a.object-selected .shape_hover {
+    opacity:1;
   }
 }
 #table-setting-container{
