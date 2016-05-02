@@ -567,17 +567,17 @@ img.rating-icon-gray {
 /*Slideshow - JS from http://www.slidesjs.com/ */
 
 /*CUSTOMIZED style */
+.slide-container {
+  margin: 0 0;
+  width: auto;
+}
+
 #slides {
   display: none;
   position: relative;
 }
 
-#slides div {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-#slides .slidesjs-navigation {
+.slidesjs-navigation {
   position: absolute;
   width: 36px;
   height: 36px;
@@ -597,12 +597,12 @@ img.rating-icon-gray {
   }
 }
 
-#slides .slidesjs-previous {
+.slidesjs-previous {
   left:0;
   z-index: 143;
 }
 
-#slides .slidesjs-next {
+.slidesjs-next {
   right:0;
   z-index: 142;
 }
@@ -638,32 +638,9 @@ img.rating-icon-gray {
   background-position: 0 -26px;
 }
 
-#slides a:link,
-#slides a:visited {
-  //color: #333;
-}
-
-#slides a:hover,
-#slides a:active {
-  color: $ourdarkerorg;
-}
-
 .navbar {
   overflow: hidden;
 } 
-
-/***** SlidesJS Required: These styles are required if you'd like a responsive slideshow */
-#slides {
-  display: none;
-}
-
-.slide-container {
-  margin: 0 0;
-  width: 360px;
-  height: 202px;
-}
-//END of slideshow
-
 
 /*********ABOUT***************************/
 #about-wrapper{
