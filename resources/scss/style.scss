@@ -148,10 +148,7 @@ nav{
   z-index: 100;
   background-color: $ourdarkblue;
   display: inline;
-  img{
-    height: 50px;
-    float: left;
-  }
+ 
   a{
     text-decoration: none;
     color: $ourdarkorg;
@@ -162,11 +159,19 @@ nav{
 }
 
 #navleft{
-  margin-left: 60px;
+  display: inline-block;
+  margin-left: 10px;
   margin-right: 0;
-  width:40%;
+  white-space: nowrap;
+  img {
+    height: 50px;
+    float: left;
+  }
   h1,h3{
-    margin:0;
+    margin: 0 0 0 60px;
+  }
+  a {
+    display: block;
   }
 }
 
@@ -538,11 +543,11 @@ nav{
     width:100%;
   }
 }
-.rating-icon {
-  width: 18px;
-  height: 18px;
-  padding: 0 2px;
-  vertical-align: middle;
+img.rating-icon {
+  width: 18px !important;
+  height: 18px !important;
+  padding: 0 2px !important;
+  vertical-align: middle !important;
 
   content:url(../icons/ic_rating_icon.svg);
 
@@ -550,7 +555,7 @@ nav{
     margin-left: 10px;
   }
 }
-.rating-icon-gray {
+img.rating-icon-gray {
   -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
   filter: grayscale(100%);
   opacity: 0.7;

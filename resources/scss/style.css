@@ -116,9 +116,6 @@ nav {
   z-index: 100;
   background-color: #3264a5;
   display: inline; }
-  nav img {
-    height: 50px;
-    float: left; }
   nav a {
     text-decoration: none;
     color: #fb7c3c; }
@@ -126,11 +123,17 @@ nav {
     color: #fb7c3c; }
 
 #navleft {
-  margin-left: 60px;
+  display: inline-block;
+  margin-left: 10px;
   margin-right: 0;
-  width: 40%; }
+  white-space: nowrap; }
+  #navleft img {
+    height: 50px;
+    float: left; }
   #navleft h1, #navleft h3 {
-    margin: 0; }
+    margin: 0 0 0 60px; }
+  #navleft a {
+    display: block; }
 
 #navright {
   position: absolute;
@@ -400,16 +403,16 @@ nav {
   z-index: 5;
   width: 100%; }
 
-.rating-icon {
-  width: 18px;
-  height: 18px;
-  padding: 0 2px;
-  vertical-align: middle;
+img.rating-icon {
+  width: 18px !important;
+  height: 18px !important;
+  padding: 0 2px !important;
+  vertical-align: middle !important;
   content: url(../icons/ic_rating_icon.svg); }
-  .rating-icon:first-child {
+  img.rating-icon:first-child {
     margin-left: 10px; }
 
-.rating-icon-gray {
+img.rating-icon-gray {
   -webkit-filter: grayscale(100%);
   /* Chrome, Safari, Opera */
   filter: grayscale(100%);
