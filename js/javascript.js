@@ -30,7 +30,6 @@ $(function() {
     $("#table-setting-container a").attr("class", "");
     $(this).attr("class", "object-selected");
 
-
     var idDivContent = "#tabledesc-"+$(this).attr("id");
     
     $(".tabledesc").css("display", "none");
@@ -48,6 +47,9 @@ $(function() {
     
     $(".dishlarge").css("display", "none");
     $( idDivContent ).css("display", "block");
+
+    $('.slidesjs-container, .slidesjs-control').css("width", "360px");
+    $('.slidesjs-container, .slidesjs-control').css("height", "202px");
 
     $( idDivContent ).css("opacity", 0);
     $( idDivContent ).animate({
