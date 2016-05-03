@@ -307,7 +307,7 @@ nav{
   h1{
     margin-top:0;
     margin-bottom:0;
-    font-size: 2rem;
+    font-size: 3rem;
   }
   .page{
     height: calc(100vh - 100px);
@@ -319,11 +319,11 @@ nav{
   position:fixed;
   background-color: $ourdarkblue;
   z-index: 100;
-  top: 50px;
+  top: 60px;
   width: 100%;
   padding: 0;
   .row {
-    padding:10px 20px;
+    padding:0 20px 10px 20px;
   }
   img{
     display: inline-block;
@@ -462,7 +462,7 @@ nav{
 }
 #table-setting-container{
   margin: 20px;
-  padding:15px 0 0 0;
+  padding:0 0 0 0;
   background-color: $ourdarkblue;
 }
 
@@ -486,7 +486,7 @@ nav{
     padding-right:20px;
   }
   p{
-    padding-bottom: 30px;
+    padding-bottom: 10px;
   }
   h2{
     margin-top:0;
