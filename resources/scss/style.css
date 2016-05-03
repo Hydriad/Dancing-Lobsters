@@ -15,11 +15,14 @@ body {
 	font-kerning: normal;
 }*/
 p {
-  font-size: 1rem; }
+  font-size: 1rem;
+  line-height: 1.5; }
 
 a {
-  color: black;
+  color: #fb7c3c;
   text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
   a.button {
     font-family: "Lobster Two", cursive;
     font-style: italic;
