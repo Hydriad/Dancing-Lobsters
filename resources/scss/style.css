@@ -59,7 +59,8 @@ h4 {
   font-style: normal;
   font-size: 36px !important;
   /* Preferred icon size */
-  display: inline-block;
+  width: 36px;
+  display: block;
   line-height: 1;
   text-transform: none;
   letter-spacing: normal;
@@ -381,14 +382,21 @@ nav {
 
 #dosdontsleft, #dosdontsright {
   padding: 1% 5% 1% 5%; }
-  #dosdontsleft img, #dosdontsright img {
-    width: 100px;
-    float: left;
-    padding-right: 20px; }
-  #dosdontsleft p, #dosdontsright p {
-    padding-bottom: 10px; }
-  #dosdontsleft h2, #dosdontsright h2 {
-    margin-top: 0; }
+
+.dosdonts-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 30px; }
+  .dosdonts-item img {
+    width: 80px;
+    margin-right: 20px; }
+  .dosdonts-item p {
+    margin: 0;
+    padding: 0; }
+  .dosdonts-item h3 {
+    margin: 0 0 10px 0;
+    padding: 0; }
 
 .walkthrough-dishes .downarrow {
   color: #fb7c3c; }
