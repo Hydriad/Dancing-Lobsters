@@ -45,6 +45,17 @@ $(function() {
     opacity: 1
     }, 400);
   });
+
+  // Hide claws when scroll down
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 600) { //use `this`, not `document`
+      $('#lobster-claws').css('display', 'none');
+    }
+    else {
+      $('#lobster-claws').css('display', 'block');
+    }
+  });
+  
 });
 //end smooth scrolling code
 
