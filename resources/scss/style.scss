@@ -40,6 +40,11 @@ a {
     font-style: italic;
 		font-size: 1.5rem;
 		letter-spacing: 1px;
+
+    &:hover {
+      text-decoration: none;
+      color: $ourdarkerorg;
+    }
 	}
 }
 
@@ -47,7 +52,7 @@ h1 {
 	font-family: "Lobster Two", cursive;
   font-weight: 400;
   font-style: italic;
-	font-size: 1.5rem;
+	font-size: 2rem;
 	letter-spacing: 1px;
 }
 
@@ -109,6 +114,7 @@ main {
     path {
       fill: $ourdarkerorg;
     }
+    text-decoration: none;
   }
 }
 /*********GENERAL***************************/
@@ -334,7 +340,6 @@ nav{
   h1{
     margin-top:0;
     margin-bottom:0;
-    font-size: 3rem;
   }
   .page{
     height: calc(100vh - 100px);
@@ -407,6 +412,9 @@ nav{
   p, h1, h2{
     color: white;
   }
+  h1 {
+    font-size: 3rem;
+  }
 }
 #introtext{
   padding:8% 3% 3% 3%;
@@ -458,17 +466,13 @@ nav{
   h1{
     color:$ourdarkorg;
   }
-
-  svg {
-    height:450px;
-    background-color:$ourdarkblue;
-  }
 }
 #tableimg{
   padding:2%;
 }
 .tabledesc{
-  padding:6% 4% 4% 4%;
+  padding:6% 4% 4% 0%;
+
 }
 #table_setting {
   a {
@@ -488,9 +492,14 @@ nav{
   }
 }
 #table-setting-container{
-  margin: 20px;
-  padding:0 0 0 0;
-  background-color: $ourdarkblue;
+  margin: 20px 20px 20px 40px;
+  width: 100%;
+
+  svg {
+    height:430px;
+    background-color:$ourdarkblue;
+    border-radius: 24px;
+  }
 }
 
 .walkthrough-dosdonts{
@@ -562,15 +571,19 @@ nav{
   background-repeat: no-repeat;
   background-position: center;
   background-image: url("../pics/spagetti01.jpg");
+  border-radius: 4px;
+  cursor: pointer;
 
   p{
     position: absolute;
     bottom: 0;
     margin: 0;
-    width: calc(100% - 12px);
-    padding: 6px;
-    background-color: rgba($ourdarkblue, .7);
+    width: calc(100% - 8px);
+    padding: 4px;
+    background-color: rgba($ourdarkorg, .8);
     color:white;
+    border-radius: 0 0 4px 4px;
+    text-indent: 4px;
   }
 }
 #spaghetti {
